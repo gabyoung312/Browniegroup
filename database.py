@@ -9,6 +9,23 @@ products = {
      1100: {"name":"Red Velvet","price":130},
      1200: {"name":"Mango Cream Pie","price":200}
 }
+branches = {
+     1: {"name":"Katipunan"},
+     2: {"name":"Tomas Morato"},
+     3: {"name":"Eastwood"},
+     4: {"name":"Tiendesitas"},
+     5: {"name":"Arcovia"},
+}
+def get_branch(code):
+     return branches[code]
+def get_branches():
+     branch_list = []
+     for i,v in branches.items():
+          branch = v
+          branch.setdefault("code",i)
+          branch_list.append(branch)
+     return branch_list
+
 def get_product(code):
      return products[code]
 def get_products():
