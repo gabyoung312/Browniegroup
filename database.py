@@ -7,7 +7,7 @@ products = {
      600: {"name":"Cold Brew","price":200},
      1000: {"name":"Tiramisu","price":150},
      1100: {"name":"Red Velvet","price":130},
-     1200: {"name":"Tiramisu","price":150}
+     1200: {"name":"Mango Cream Pie","price":200}
 }
 def get_product(code):
      return products[code]
