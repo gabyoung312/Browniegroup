@@ -23,11 +23,11 @@ def get_products():
      return product_list
 
 branches = {
-     1: {"name":"Katipunan"},
-     2: {"name":"Tomas Morato"},
-     3: {"name":"Eastwood"},
-     4: {"name":"Tiendesitas"},
-     5: {"name":"Arcovia"},
+    1: {"name":"Katipunan","phonenumber":"09179990000"},
+    2: {"name":"Tomas Morato","phonenumber":"09179990001"},
+    3: {"name":"Eastwood","phonenumber":"09179990002"},
+    4: {"name":"Tiendesitas","phonenumber":"09179990003"},
+    5: {"name":"Arcovia","phonenumber":"09179990004"},
 }
 def get_branch(code):
      return branches[code]
