@@ -32,6 +32,10 @@ def branches():
      branch_list = db.get_branches()
      return render_template('branches.html', page="Branches", branch_list=branch_list)
 
+@app.route('/branchdetails')
+def branchdetials():
+     code = request.args.get('code', '')
+     branch = db.get_branch(int(code))
 
 @app.route('/aboutus')
 def aboutus():
